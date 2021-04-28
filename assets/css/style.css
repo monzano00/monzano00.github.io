@@ -26,6 +26,7 @@ html{
 .about:hover {
     color:rgba(91, 75, 240, 0.854);
 
+
 }
 .resume:hover {
     color:rgba(91, 75, 240, 0.854);
@@ -81,7 +82,7 @@ html{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    offset: -5px;
+    
 }
 
 .resume-pic{
