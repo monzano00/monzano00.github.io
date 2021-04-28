@@ -1,0 +1,289 @@
+/* Hi, thanks for taking the intiative to read through the file.
+   While it may be helpful to understand this file, won't need to make 
+   any changes to here. Please follow the directions listed in the 
+   comments in style.css. */
+
+
+*{
+    box-sizing:border-box
+}
+html,body{
+    height:100%;
+}
+body{
+    margin:0;
+    display:-webkit-box;
+    font-family:'Lato', 'Times New Roman', Times, serif;
+    height:100%;
+    display: flex;
+}
+h1,h2,h3,h4{
+    margin:0;
+}
+h1{
+    font-weight:400;
+    margin:0;
+    font-size:27px;
+}
+h2{
+    font-size:14.5px;
+    color:#1770ab;
+}
+h3{
+    margin-top:4px;
+    font-size:15px;
+    font-weight:normal;
+    text-transform:uppercase;
+    color:#6c757c
+}
+h4{
+    margin-top:2px;
+    font-size:12px;
+    font-weight:normal;
+    color:#6c757c;
+}
+.nav{
+    background-color:#003262;
+    padding:13px 10px 10px 10px;
+}
+.nav--button{
+    width:100%;
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+    color:#fff;
+}
+.nav--button img{
+    width:75%;
+    margin-bottom:5px;
+}
+.nav--button img:not(#logo){
+    -webkit-filter:invert(100%);
+    filter:invert(100%);
+}
+.nav--button img#logo{
+    margin-bottom:10px;
+    width:100%;
+}
+.nav--button img:hover{
+    cursor:pointer;
+}
+.main{
+    display:-webkit-box;
+    display:flex;
+    width:100%;
+}
+.dashboard{
+    width:100%
+}
+.dashboard--title{
+    padding:0 24px 20px 0;
+    margin:0 24px 30px 0;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+}
+.dashboard--title img{
+    width:20px;
+}
+.dashboard--classes__box{
+    border-radius:5px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.3);
+    -webkit-transition:all 0.1s;
+    transition:all 0.1s;
+}
+
+.dashboard--classes__box__image{
+    height:146px;
+    background-color:#1770ab;
+}
+.dashboard--classes__box__description{
+    padding:15px 22.5px;
+}
+.dashboard--classes__box__controls__buttons{
+    margin-top:9px;
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:justify;
+    justify-content:space-between;
+}
+.dashboard--classes__box__controls__buttons img{
+    height:23.5px;
+    -webkit-filter:invert(40%);
+    filter:invert(40%);
+}
+.dashboard--classes__box__controls__buttons img:hover{
+    cursor:pointer;
+}
+.notifications{
+    margin:24px 36px;
+}
+.notifications img{
+    width:100%;
+    padding:4px;
+}
+.notifications__todo--title{
+    padding-bottom:12px;
+    margin-bottom:12px;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+}
+.notifications__todo--title h2{
+    color:#2d3b45;
+    font-size:16px;
+}
+.notifications__notifs .notifications__notifs--box{
+    margin-bottom:16px;
+}
+.notifications__notifs .notifications__notifs--box img{
+    width:30px;
+    margin-right:5px;
+}
+.notifications__notifs .notifications__notifs--box h1{
+    font-weight:300;
+    font-size:14px;
+    color:#1770ab;
+    margin:8px 0 4px 0;
+}
+.notifications__notifs .notifications__notifs--box h2{
+    color:rgba(108,117,124,0.6);
+    font-weight:400;
+}
+.notifications__notifs .notifications__notifs--box h3{
+    text-transform:none;
+    font-size:12px;
+    color:rgba(108,117,124,0.55);
+}
+@media (min-width: 1100px){
+    .dashboard--classes{
+        width:894px;
+    }
+}
+@media (max-width: 1099px){
+    .dashboard--classes{
+        width:90%;
+    }
+}
+@media (min-width: 993px){
+    .notifications{
+        width:288px;
+    }
+}
+@media (max-width: 1099px){
+    .dashboard--classes__box{
+        width:48%;
+    }
+    .notifications{
+        width:30%;
+    }
+}
+
+
+
+.nav{
+    /* [Problem 1] 
+        FIXME: Set the width of the nav class to 85px. */
+    width: 85px;
+}
+.nav--button{
+    /*  [Problem 2]
+        FIXME: Initialize flexbox vertically. Align the text and icons so that they
+        are center aligned. */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+
+}
+.dashboard{
+    /*  [Problem 3]
+        FIXME: Add some breathing room! The dashboard portion is a bit tight! 
+        (Hint: use padding!) */
+        padding: 24px;
+
+}
+.dashboard--title{
+    /*  [Problem 4]
+        FIXME: Use flex to add the correct spacing between the "Dashboard" text and
+        the three dot button icon that you added previously. Align them to the 
+        center of each item. */
+        display: flex;
+        justify-content:space-between;
+
+
+}
+.dashboard--classes{
+    /*  [Problem 5]
+        FIXME: Use flexbox to make the classes tabs wrap in a 3x2 setup.
+        Use flexbox to create equal spacing between each box. */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+}
+.dashboard--classes__box{
+    /*  [Problem 6]
+        FIXME: Set the widths of each class tab to be 31.5% of the width;
+        */ 
+        width: 31.5%;
+
+    /*
+        [Problem 7]
+        FIXME: Add 35px to the space under each box. (Choose carefully!) */
+        margin-bottom: 35px;
+        /* not padding */
+
+
+        
+}
+/*  [Problem 8]
+    FIXME: when the dashboard--classes__box class is hovered over, add a
+	darker shadow around the edges of the class tab, just like the real
+	bcourses interface. Use this: 0 4px 10px rgba(0,0,0,0.35)
+
+	Write your own class identifier. */
+.dashboard--classes__box:hover {
+    
+    /* box-shadow: 
+        inset 0 4px 10px rgba(0,0,0,0.35)
+        inset 0 -4px 10px rgba(0,0,0,0.35) */
+    box-shadow:0 4px 10px rgba(0,0,0,0.35);
+}
+
+
+
+.dashboard--classes__box__image{
+    /*  [Problem 9]
+        FIXME: The class tab should have a border-radius of 5px along the top
+    	of the boxes. 
+
+    	(Hint: Make sure you only add it to the top left and top
+    	right corners. Simply put, the answer is NOT border-radius: 5px.) */
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+
+}
+/*  [Problem 10]
+    FIXME: When h2, h3, and h4 are hovered over, add an underline and
+    change the cursor to a pointer. Write the selectors and the styles!
+
+    Write your own class identifier. */
+h2:hover,h3:hover,h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+/* if selector or class, need #div */
+
+
+.notifications__notifs .notifications__notifs--box{
+    /*  [Problem 11]
+        FIXME: Turn this element into a flex element and use the correct property
+        to align the announcement icon and the text box. */
+        display:flex;
+        align-items: flex-start;
+
+        
+        
+
+        
+}

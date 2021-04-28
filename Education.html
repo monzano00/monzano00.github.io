@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD Flexbox bCourses</title>
+    <!-- <link rel="stylesheet" href="assets/css/wdd.css"> -->
+    <!-- FIXME: Find and add the "Lato" font from Google fonts. -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">	
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	
+
+	<div id="about-navbar">
+
+        <div class = "title">Jason Ash</div>
+		<!-- 
+
+        <img class="navlogo" src="assets/img/logo.png"/> -->
+		
+	</div>
+
+	
+
+	<div id="sections">
+		<a class = "about" href="./index.html">
+			<div>About</div>
+		</a>
+		<a class = "resume" href="./Resume.html">
+			<div>Resume</div>
+		</a>
+		<a class = "education" href="./Education.html">
+			<div>Education</div>
+		</a>
+		<a id = "coding-projects" class = "coding-projects" href="./Coding-Projects.html">
+			<div>Coding Projects</div>
+		</a>
+
+	</div>
+
+	<div id="section-pics">
+	
+	
+		<img src="assets/img/Animation/About1.png">
+	
+		<img src="assets/img/Animation/Resume1.png">
+		
+		<img src="assets/img/Animation/Apple1.png"> 
+		<div class="widget-wrapper">
+			
+			<!-- <div class="digit-0">0000</div>
+			-->
+			<div id="digit" class="digit digit-4"></div>
+
+			<div id="digit" class="digit digit-3"></div>
+
+			<div id="digit" class="digit digit-2"></div>
+
+			<div id="digit" class="digit digit-1"></div>
+		</div>
+	</div>
+	
+	
+	
+	<section id = "education-part">
+
+		<div class="container">
+	<!-- https://freefrontend.com/css-timelines/ -->
+		
+			<div class="rightbox">
+			  <div class="rb-container">
+				<ul class="rb">
+				  <li class="rb-item" ng-repeat="itembx">
+					<div id = timestampberkeley class="timestamp">
+					  2018-2021
+					  
+					  <div class = "timestamp-title">  University of California, Berkeley</div>
+					  <br class = "timestamp-title"> 
+					</div>
+		
+				  </li>
+				  <li class="rb-item" ng-repeat="itembx">
+					<div id = timestampriverside class="timestamp">
+					  2018-2019
+					  <div class = "timestamp-title">  Riverside City College, CA</div>
+					</div>
+		  
+				  </li>
+		  
+				  <li class="rb-item" ng-repeat="itembx">
+					<div id = timestampnorcoc class="timestamp">
+					  2017
+					  <div class = "timestamp-title"> Norco College, CA</div> 
+					</div>
+		  
+				  </li>
+
+				  
+				  <li class="rb-item" ng-repeat="itembx">
+					<div id = timestampnorcoh class="timestamp">
+					  2013-2017
+					  <div class = "timestamp-title"> Norco High, CA</div>
+					</div>
+		  
+				  </li>
+		  
+				</ul>
+		  
+			  </div>
+			</div>
+		</div>
+
+		<div class="rightcontainer">
+			<div class = "carousel" data-flickity='{ "autoPlay": true, "pageDots": false, "lazyLoad": true }'>	
+				<!-- <ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>	
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+				  </ol> -->
+					<div class="carousel-cell2">
+						<img src="assets/img/Education/norcoh.jpg" alt="Norco High School">
+						
+						
+					</div>	
+					<div class="carousel-cell2">
+						<img src="assets/img/Education/norcoc.jpg" alt="Norco College">
+					</div>	
+					<div class="carousel-cell2">
+						<img src="assets/img/Education/riverside.jpg" alt="Riverside City College">
+					</div>	
+					<div class="carousel-cell2">
+						<img src="assets/img/Education/berkeley.jpg" alt="UC Berkeley">
+					</div>	
+					
+					<p class="caption">&nbsp;</p>
+
+	
+					
+			</div>
+	
+			<!-- <img id = "schoolpic">
+			<p id = "schooltext">
+				Activities and Societies: Future Business Leaders oft America (FBLA), Friday Night Live (FNL), Key -->
+				<!-- Club, California Scholarship Federation. -->
+
+
+			
+		</div>
+
+
+	</section>
+
+
+<div id="q2-navbar">
+	<div id = "logos">
+		<a href = "https://www.facebook.com/jason.ash.9">			
+			<img class="social" src="assets/img/Social-Media/1.png"/>
+		</a>
+
+		<a href = "https://twitter.com/JasonAshMonzano">			
+			<img class="social" src="assets/img/Social-Media/2.png"/>
+		</a>
+		
+		<a href = "https://www.linkedin.com/in/ashjason/">			
+			<img class="social" src="assets/img/Social-Media/3.png"/>
+		</a>
+		<a href = "mailto:jrash@berkeley.edu">			
+			<img class="social" src="assets/img/Social-Media/4.png"/>
+		</a>
+	</div>
+<!-- 
+	<div id = "year">
+		<input type = "date">
+	</div> -->
+</div>
+
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+</html>
